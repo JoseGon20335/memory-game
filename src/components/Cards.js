@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import Card from './Card'
 
 function Cards(){
@@ -33,6 +33,7 @@ function Cards(){
             items[current].stat = "wrong"
             items[prev].stat = "wrong"
             setItems([...items])
+            // eslint-disable-next-line no-undef
             setTimeout(() => {
                 items[current].stat = ""
                 items[prev].stat = ""
