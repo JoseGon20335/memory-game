@@ -1,24 +1,32 @@
 import React, { useState } from 'react'
 import Card from './Card'
+import img1 from '../images/image1.jpg';
+import img2 from '../images/image2.jpg';
+import img3 from '../images/image3.jpg';
+import img4 from '../images/image4.jpg';
+import img5 from '../images/image5.jpg';
+import img6 from '../images/image6.jpg';
+import img7 from '../images/image7.jpg';
+import img8 from '../images/image8.jpg';
 
 function Cards(){
     const [items, setItems] = useState([
-        { id: 1, img: '/images/image1.jpg', stat: "" },
-        { id: 1, img: '/images/image1.jpg', stat: "" },
-        { id: 2, img: '/images/image2.jpg', stat: "" },
-        { id: 2, img: '/images/image2.jpg', stat: "" },
-        { id: 3, img: '/images/image3.jpg', stat: "" },
-        { id: 3, img: '/images/image3.jpg', stat: "" },
-        { id: 4, img: '/images/image4.jpg', stat: "" },
-        { id: 4, img: '/images/image4.jpg', stat: "" },
-        { id: 5, img: '/images/image5.jpg', stat: "" },
-        { id: 5, img: '/images/image5.jpg', stat: "" },
-        { id: 6, img: '/images/image6.jpg', stat: "" },
-        { id: 6, img: '/images/image6.jpg', stat: "" },
-        { id: 7, img: '/images/image7.jpg', stat: "" },
-        { id: 7, img: '/images/image7.jpg', stat: "" },
-        { id: 8, img: '/images/image8.jpg', stat: "" },
-        { id: 8, img: '/images/image8.jpg', stat: "" }
+        { id: 1, img: img1, stat: "" },
+        { id: 1, img: img1, stat: "" },
+        { id: 2, img: img2, stat: "" },
+        { id: 2, img: img2, stat: "" },
+        { id: 3, img: img3, stat: "" },
+        { id: 3, img: img3, stat: "" },
+        { id: 4, img: img4, stat: "" },
+        { id: 4, img: img4, stat: "" },
+        { id: 5, img: img5, stat: "" },
+        { id: 5, img: img5, stat: "" },
+        { id: 6, img: img6, stat: "" },
+        { id: 6, img: img6, stat: "" },
+        { id: 7, img: img7, stat: "" },
+        { id: 7, img: img7, stat: "" },
+        { id: 8, img: img8, stat: "" },
+        { id: 8, img: img8, stat: "" }
     ].sort(() => Math.random() - 0.5))
 
     const [prev, setPrev] = useState(-1)
